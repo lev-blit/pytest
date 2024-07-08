@@ -601,6 +601,7 @@ class TerminalReporter:
             line += " / %d skipped" % skipped
         if self._numcollected > selected > 0:
             line += " / %d selected" % selected
+        line += ", happy testing!"
         if self.isatty:
             self.rewrite(line, bold=True, erase=True)
             if final:
